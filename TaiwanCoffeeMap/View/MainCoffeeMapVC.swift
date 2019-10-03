@@ -34,14 +34,22 @@ class MainCoffeeMapVC: UIViewController {
         locationManager.requestWhenInUseAuthorization()
     }
     
+    private func showMapMarker() {
+        viewModel.coffeeShops.forEach {
+            let marker = CoffeeShopMarker(vm: $0)
+            marker.map = mapView
+        }
+    }
+    
     private func loadCoffeeShopData() {
         guard let url = URL(string: API.baseURL) else { return }
         
         let resorce = Resource<[CoffeeShopInfo]>(url: url)
-        networkService.load(resource: resorce) { (coffeeShops) in
+        networkService.load(resource: resorce) { [weak self](coffeeShops) in
             guard let coffeShops = coffeeShops else { return }
             
-            self.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
+            self?.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
+            self?.showMapMarker()
         }
     }
 }

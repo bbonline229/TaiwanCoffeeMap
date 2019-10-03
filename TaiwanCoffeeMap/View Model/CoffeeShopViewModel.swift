@@ -9,9 +9,9 @@
 import Foundation
 
 class CoffeeShopViewModel {
-    private var coffeeShops: [CoffeeShopInfo]
+    var coffeeShops: [CoffeeShopInfoViewModel]
     
     init(coffeeShops: [CoffeeShopInfo]) {
-        self.coffeeShops = coffeeShops
+        self.coffeeShops = coffeeShops.map { CoffeeShopInfoViewModel(coffeeShopInfo: $0) }
     }
 }

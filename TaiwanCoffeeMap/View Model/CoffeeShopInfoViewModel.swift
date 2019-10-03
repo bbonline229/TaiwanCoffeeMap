@@ -15,3 +15,13 @@ class CoffeeShopInfoViewModel {
         self.coffeeShopInfo = coffeeShopInfo
     }
 }
+
+extension CoffeeShopInfoViewModel {
+    var latitude: Double {
+        return Double(coffeeShopInfo.latitude)!
+    }
+    
+    var longitude: Double {
+        return Double(coffeeShopInfo.longitude)!
+    }
+}
