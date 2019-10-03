@@ -13,6 +13,8 @@
 		0498E3BE2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */; };
 		0498E3CA2345C0D200D4D135 /* MainCoffeeMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */; };
 		0498E3CB2345C0D200D4D135 /* MainCoffeeMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */; };
+		0C9752B6C14A1F87C3B0B15F /* Pods_TaiwanCoffeeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */; };
+		AAE0BA6369EA6C7504917E5D /* Pods_TaiwanCoffeeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02683BC02798E3BDBE8973F /* Pods_TaiwanCoffeeMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		0498E3BF2345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoffeeMapVC.swift; sourceTree = "<group>"; };
 		0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCoffeeMapVC.xib; sourceTree = "<group>"; };
+		093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanCoffeeMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		181B43CF05A5B959423611A2 /* Pods-TaiwanCoffeeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMap.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap.release.xcconfig"; sourceTree = "<group>"; };
+		B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMapTests.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMapTests/Pods-TaiwanCoffeeMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFFB9116DD9FA4CD50605456 /* Pods-TaiwanCoffeeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMapTests/Pods-TaiwanCoffeeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C02683BC02798E3BDBE8973F /* Pods_TaiwanCoffeeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanCoffeeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57FB962A71DFBB1706773F8 /* Pods-TaiwanCoffeeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMap.debug.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE0BA6369EA6C7504917E5D /* Pods_TaiwanCoffeeMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9752B6C14A1F87C3B0B15F /* Pods_TaiwanCoffeeMapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				0498E3A72345BAE200D4D135 /* TaiwanCoffeeMap */,
 				0498E3BC2345BAE300D4D135 /* TaiwanCoffeeMapTests */,
 				0498E3A62345BAE200D4D135 /* Products */,
+				0E30ACA3908049068201678C /* Pods */,
+				2F63747BD34C99233168A5FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,27 @@
 			path = TaiwanCoffeeMapTests;
 			sourceTree = "<group>";
 		};
+		0E30ACA3908049068201678C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C57FB962A71DFBB1706773F8 /* Pods-TaiwanCoffeeMap.debug.xcconfig */,
+				181B43CF05A5B959423611A2 /* Pods-TaiwanCoffeeMap.release.xcconfig */,
+				BFFB9116DD9FA4CD50605456 /* Pods-TaiwanCoffeeMapTests.debug.xcconfig */,
+				B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F63747BD34C99233168A5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C02683BC02798E3BDBE8973F /* Pods_TaiwanCoffeeMap.framework */,
+				093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0498E3C22345BAE300D4D135 /* Build configuration list for PBXNativeTarget "TaiwanCoffeeMap" */;
 			buildPhases = (
+				FB9162C90BAFF9BB701BEE74 /* [CP] Check Pods Manifest.lock */,
 				0498E3A12345BAE200D4D135 /* Sources */,
 				0498E3A22345BAE200D4D135 /* Frameworks */,
 				0498E3A32345BAE200D4D135 /* Resources */,
+				D9A07466CD669324BB5B0AF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0498E3C52345BAE300D4D135 /* Build configuration list for PBXNativeTarget "TaiwanCoffeeMapTests" */;
 			buildPhases = (
+				EE556B0775DC48033D3ACBD9 /* [CP] Check Pods Manifest.lock */,
 				0498E3B52345BAE300D4D135 /* Sources */,
 				0498E3B62345BAE300D4D135 /* Frameworks */,
 				0498E3B72345BAE300D4D135 /* Resources */,
@@ -191,6 +227,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9A07466CD669324BB5B0AF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE556B0775DC48033D3ACBD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaiwanCoffeeMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9162C90BAFF9BB701BEE74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaiwanCoffeeMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0498E3A12345BAE200D4D135 /* Sources */ = {
@@ -350,6 +450,7 @@
 		};
 		0498E3C32345BAE300D4D135 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57FB962A71DFBB1706773F8 /* Pods-TaiwanCoffeeMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +469,7 @@
 		};
 		0498E3C42345BAE300D4D135 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181B43CF05A5B959423611A2 /* Pods-TaiwanCoffeeMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +488,7 @@
 		};
 		0498E3C62345BAE300D4D135 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFB9116DD9FA4CD50605456 /* Pods-TaiwanCoffeeMapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -407,6 +510,7 @@
 		};
 		0498E3C72345BAE300D4D135 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
