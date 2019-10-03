@@ -16,6 +16,8 @@
 		0498E3D72345EC1000D4D135 /* CoffeeShopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */; };
 		0498E3DB2346048300D4D135 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3DA2346048300D4D135 /* NetWorkManager.swift */; };
 		0498E3E0234608C200D4D135 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3DF234608C200D4D135 /* API.swift */; };
+		0498E3E223461D5400D4D135 /* CoffeeShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */; };
+		0498E3E423461E8700D4D135 /* CoffeeShopInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3E323461E8700D4D135 /* CoffeeShopInfoViewModel.swift */; };
 		0C9752B6C14A1F87C3B0B15F /* Pods_TaiwanCoffeeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */; };
 		AAE0BA6369EA6C7504917E5D /* Pods_TaiwanCoffeeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02683BC02798E3BDBE8973F /* Pods_TaiwanCoffeeMap.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeShopInfo.swift; path = TaiwanCoffeeMap/Manager/CoffeeShopInfo.swift; sourceTree = SOURCE_ROOT; };
 		0498E3DA2346048300D4D135 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		0498E3DF234608C200D4D135 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewModel.swift; sourceTree = "<group>"; };
+		0498E3E323461E8700D4D135 /* CoffeeShopInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopInfoViewModel.swift; sourceTree = "<group>"; };
 		093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanCoffeeMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B43CF05A5B959423611A2 /* Pods-TaiwanCoffeeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMap.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap.release.xcconfig"; sourceTree = "<group>"; };
 		B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMapTests.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMapTests/Pods-TaiwanCoffeeMapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				0498E3DC234605F900D4D135 /* Service */,
-				0498E3D02345D56800D4D135 /* Extension */,
 				0498E3CC2345D50A00D4D135 /* Model */,
 				0498E3CE2345D52800D4D135 /* View */,
 				0498E3CD2345D51E00D4D135 /* View Model */,
@@ -125,6 +128,8 @@
 		0498E3CD2345D51E00D4D135 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */,
+				0498E3E323461E8700D4D135 /* CoffeeShopInfoViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -347,7 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0498E3DB2346048300D4D135 /* NetWorkManager.swift in Sources */,
+				0498E3E423461E8700D4D135 /* CoffeeShopInfoViewModel.swift in Sources */,
 				0498E3CA2345C0D200D4D135 /* MainCoffeeMapVC.swift in Sources */,
+				0498E3E223461D5400D4D135 /* CoffeeShopViewModel.swift in Sources */,
 				0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */,
 				0498E3E0234608C200D4D135 /* API.swift in Sources */,
 				0498E3D72345EC1000D4D135 /* CoffeeShopInfo.swift in Sources */,

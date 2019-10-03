@@ -15,6 +15,8 @@ class MainCoffeeMapVC: UIViewController {
     private let locationManager = CLLocationManager()
     private let networkService = NetWorkService()
     
+    private var viewModel: CoffeeShopViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +39,9 @@ class MainCoffeeMapVC: UIViewController {
         
         let resorce = Resource<[CoffeeShopInfo]>(url: url)
         networkService.load(resource: resorce) { (coffeeShops) in
-            print(coffeeShops)
+            guard let coffeShops = coffeeShops else { return }
+            
+            self.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
         }
     }
 }
