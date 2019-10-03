@@ -13,12 +13,14 @@ class MainCoffeeMapVC: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     
     private let locationManager = CLLocationManager()
+    private let networkService = NetWorkService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavigation()
         setupLocation()
+        loadCoffeeShopData()
     }
     
     private func setupNavigation() {
@@ -28,6 +30,15 @@ class MainCoffeeMapVC: UIViewController {
     private func setupLocation() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+    }
+    
+    private func loadCoffeeShopData() {
+        guard let url = URL(string: API.baseURL) else { return }
+        
+        let resorce = Resource<[CoffeeShopInfo]>(url: url)
+        networkService.load(resource: resorce) { (coffeeShops) in
+            print(coffeeShops)
+        }
     }
 }
 
