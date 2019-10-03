@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3A82345BAE200D4D135 /* AppDelegate.swift */; };
-		0498E3AB2345BAE200D4D135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3AA2345BAE200D4D135 /* ViewController.swift */; };
-		0498E3AE2345BAE200D4D135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3AC2345BAE200D4D135 /* Main.storyboard */; };
 		0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3AF2345BAE300D4D135 /* Assets.xcassets */; };
 		0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */; };
 		0498E3BE2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */; };
+		0498E3CA2345C0D200D4D135 /* MainCoffeeMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */; };
+		0498E3CB2345C0D200D4D135 /* MainCoffeeMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		0498E3A52345BAE200D4D135 /* TaiwanCoffeeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanCoffeeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498E3A82345BAE200D4D135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0498E3AA2345BAE200D4D135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0498E3AD2345BAE200D4D135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0498E3AF2345BAE300D4D135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0498E3B22345BAE300D4D135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0498E3B42345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0498E3B92345BAE300D4D135 /* TaiwanCoffeeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaiwanCoffeeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiwanCoffeeMapTests.swift; sourceTree = "<group>"; };
 		0498E3BF2345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoffeeMapVC.swift; sourceTree = "<group>"; };
+		0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCoffeeMapVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				0498E3A82345BAE200D4D135 /* AppDelegate.swift */,
-				0498E3AA2345BAE200D4D135 /* ViewController.swift */,
-				0498E3AC2345BAE200D4D135 /* Main.storyboard */,
 				0498E3AF2345BAE300D4D135 /* Assets.xcassets */,
 				0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */,
 				0498E3B42345BAE300D4D135 /* Info.plist */,
+				0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */,
+				0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */,
 			);
 			path = TaiwanCoffeeMap;
 			sourceTree = "<group>";
@@ -178,8 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */,
+				0498E3CB2345C0D200D4D135 /* MainCoffeeMapVC.xib in Resources */,
 				0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */,
-				0498E3AE2345BAE200D4D135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0498E3AB2345BAE200D4D135 /* ViewController.swift in Sources */,
+				0498E3CA2345C0D200D4D135 /* MainCoffeeMapVC.swift in Sources */,
 				0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0498E3AC2345BAE200D4D135 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0498E3AD2345BAE200D4D135 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
