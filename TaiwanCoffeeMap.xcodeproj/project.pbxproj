@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,12 +89,11 @@
 		0498E3A72345BAE200D4D135 /* TaiwanCoffeeMap */ = {
 			isa = PBXGroup;
 			children = (
-				0498E3A82345BAE200D4D135 /* AppDelegate.swift */,
-				0498E3AF2345BAE300D4D135 /* Assets.xcassets */,
-				0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */,
-				0498E3B42345BAE300D4D135 /* Info.plist */,
-				0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */,
-				0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */,
+				0498E3D02345D56800D4D135 /* Extension */,
+				0498E3CC2345D50A00D4D135 /* Model */,
+				0498E3CE2345D52800D4D135 /* View */,
+				0498E3CD2345D51E00D4D135 /* View Model */,
+				0498E3CF2345D54E00D4D135 /* Supporting Files */,
 			);
 			path = TaiwanCoffeeMap;
 			sourceTree = "<group>";
@@ -108,6 +107,47 @@
 			path = TaiwanCoffeeMapTests;
 			sourceTree = "<group>";
 		};
+		0498E3CC2345D50A00D4D135 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0498E3CD2345D51E00D4D135 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0498E3CE2345D52800D4D135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */,
+				0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0498E3CF2345D54E00D4D135 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0498E3A82345BAE200D4D135 /* AppDelegate.swift */,
+				0498E3AF2345BAE300D4D135 /* Assets.xcassets */,
+				0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */,
+				0498E3B42345BAE300D4D135 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0498E3D02345D56800D4D135 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0E30ACA3908049068201678C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +156,6 @@
 				BFFB9116DD9FA4CD50605456 /* Pods-TaiwanCoffeeMapTests.debug.xcconfig */,
 				B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -455,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QV6XYH2RV;
-				INFOPLIST_FILE = TaiwanCoffeeMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TaiwanCoffeeMap/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QV6XYH2RV;
-				INFOPLIST_FILE = TaiwanCoffeeMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TaiwanCoffeeMap/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

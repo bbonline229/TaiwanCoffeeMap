@@ -23,11 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func initSetup() {
-        let mainCoffeeMapVC = MainCoffeeMapVC()
+        UINavigationBar.appearance().barTintColor = .brown
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
-        window =  UIWindow(frame: UIScreen.main.bounds)
+        let mainCoffeeMapVC = MainCoffeeMapVC()
+        let mainNav = UINavigationController(rootViewController: mainCoffeeMapVC)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = mainCoffeeMapVC
+        window?.rootViewController = mainNav
         window?.makeKeyAndVisible()
     }
     
