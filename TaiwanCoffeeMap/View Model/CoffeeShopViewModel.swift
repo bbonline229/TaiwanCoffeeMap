@@ -15,3 +15,13 @@ class CoffeeShopViewModel {
         self.coffeeShops = coffeeShops.map { CoffeeShopInfoViewModel(coffeeShopInfo: $0) }
     }
 }
+
+extension CoffeeShopViewModel {
+    var numberOfShops: Int {
+        return coffeeShops.count
+    }
+    
+    func viewModel(for index: Int) -> CoffeeShopInfoViewModel {
+        return coffeeShops[index]
+    }
+}
