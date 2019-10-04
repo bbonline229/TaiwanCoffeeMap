@@ -10,12 +10,14 @@ import UIKit
 import GoogleMaps
 
 class MainCoffeeMapVC: UIViewController {
+    
     @IBOutlet weak var mapView: GMSMapView!
     
     private let locationManager = CLLocationManager()
     private let networkService = NetWorkService()
     
     private var viewModel: CoffeeShopViewModel!
+    private var coffeeShopCallOutView: CoffeeShopCallOutView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class MainCoffeeMapVC: UIViewController {
     }
     
     private func setupLocation() {
+        mapView.delegate = self
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
     }
@@ -45,7 +49,7 @@ class MainCoffeeMapVC: UIViewController {
         guard let url = URL(string: API.baseURL) else { return }
         
         let resorce = Resource<[CoffeeShopInfo]>(url: url)
-        networkService.load(resource: resorce) { [weak self](coffeeShops) in
+        networkService.load(resource: resorce) { [weak self] (coffeeShops) in
             guard let coffeShops = coffeeShops else { return }
             
             self?.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
@@ -68,5 +72,31 @@ extension MainCoffeeMapVC: CLLocationManagerDelegate {
         guard let location = locations.first else { return }
         
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+    }
+}
+
+extension MainCoffeeMapVC: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        guard let coffeeShopMarker = marker as? CoffeeShopMarker else {
+            return false
+        }
+        
+        if let _ = coffeeShopCallOutView {
+            coffeeShopCallOutView.removeFromSuperview()
+            coffeeShopCallOutView = nil
+        }
+        
+        coffeeShopCallOutView = CoffeeShopCallOutView(frame: .zero)
+        coffeeShopCallOutView.viewModel = coffeeShopMarker.viewModel
+        
+        layout(callOutView: coffeeShopCallOutView)
+        
+        return false
+    }
+    
+    private func layout(callOutView: UIView) {
+        view.addSubview(callOutView)
+        
+        callOutView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
 }

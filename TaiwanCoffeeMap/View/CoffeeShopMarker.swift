@@ -11,7 +11,7 @@ import GoogleMaps
 
 class CoffeeShopMarker: GMSMarker {
     
-    let viewModel: CoffeeShopInfoViewModel!
+    let viewModel: CoffeeShopInfoViewModel?
     
     init(vm: CoffeeShopInfoViewModel) {
         self.viewModel = vm

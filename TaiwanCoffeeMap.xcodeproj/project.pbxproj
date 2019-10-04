@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042BE68023470DE40083EF5B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE67F23470DE40083EF5B /* UIView+Extension.swift */; };
 		0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3A82345BAE200D4D135 /* AppDelegate.swift */; };
 		0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3AF2345BAE300D4D135 /* Assets.xcassets */; };
 		0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,8 @@
 		0498E3E223461D5400D4D135 /* CoffeeShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */; };
 		0498E3E423461E8700D4D135 /* CoffeeShopInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3E323461E8700D4D135 /* CoffeeShopInfoViewModel.swift */; };
 		0498E3E62346279200D4D135 /* CoffeeShopMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3E52346279200D4D135 /* CoffeeShopMarker.swift */; };
+		0498E3EA23463E7800D4D135 /* CoffeeShopCallOutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3E923463E7800D4D135 /* CoffeeShopCallOutView.xib */; };
+		0498E3EC23463EA600D4D135 /* CoffeeShopCallOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3EB23463EA600D4D135 /* CoffeeShopCallOutView.swift */; };
 		0C9752B6C14A1F87C3B0B15F /* Pods_TaiwanCoffeeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */; };
 		AAE0BA6369EA6C7504917E5D /* Pods_TaiwanCoffeeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02683BC02798E3BDBE8973F /* Pods_TaiwanCoffeeMap.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042BE67F23470DE40083EF5B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		0498E3A52345BAE200D4D135 /* TaiwanCoffeeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanCoffeeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498E3A82345BAE200D4D135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0498E3AF2345BAE300D4D135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewModel.swift; sourceTree = "<group>"; };
 		0498E3E323461E8700D4D135 /* CoffeeShopInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopInfoViewModel.swift; sourceTree = "<group>"; };
 		0498E3E52346279200D4D135 /* CoffeeShopMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopMarker.swift; sourceTree = "<group>"; };
+		0498E3E923463E7800D4D135 /* CoffeeShopCallOutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopCallOutView.xib; sourceTree = "<group>"; };
+		0498E3EB23463EA600D4D135 /* CoffeeShopCallOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCallOutView.swift; sourceTree = "<group>"; };
 		093E39F08215371C367C7A3C /* Pods_TaiwanCoffeeMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaiwanCoffeeMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B43CF05A5B959423611A2 /* Pods-TaiwanCoffeeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMap.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMap/Pods-TaiwanCoffeeMap.release.xcconfig"; sourceTree = "<group>"; };
 		B4006DBA51D0B7287B18FF3A /* Pods-TaiwanCoffeeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaiwanCoffeeMapTests.release.xcconfig"; path = "Target Support Files/Pods-TaiwanCoffeeMapTests/Pods-TaiwanCoffeeMapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042BE67E23470DC00083EF5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				042BE67F23470DE40083EF5B /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0498E39C2345BAE200D4D135 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +115,7 @@
 		0498E3A72345BAE200D4D135 /* TaiwanCoffeeMap */ = {
 			isa = PBXGroup;
 			children = (
+				042BE67E23470DC00083EF5B /* Extensions */,
 				0498E3DC234605F900D4D135 /* Service */,
 				0498E3CC2345D50A00D4D135 /* Model */,
 				0498E3CE2345D52800D4D135 /* View */,
@@ -142,6 +157,8 @@
 				0498E3C82345C0D200D4D135 /* MainCoffeeMapVC.swift */,
 				0498E3C92345C0D200D4D135 /* MainCoffeeMapVC.xib */,
 				0498E3E52346279200D4D135 /* CoffeeShopMarker.swift */,
+				0498E3E923463E7800D4D135 /* CoffeeShopCallOutView.xib */,
+				0498E3EB23463EA600D4D135 /* CoffeeShopCallOutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498E3EA23463E7800D4D135 /* CoffeeShopCallOutView.xib in Resources */,
 				0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */,
 				0498E3CB2345C0D200D4D135 /* MainCoffeeMapVC.xib in Resources */,
 				0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */,
@@ -362,6 +380,8 @@
 				0498E3E62346279200D4D135 /* CoffeeShopMarker.swift in Sources */,
 				0498E3E0234608C200D4D135 /* API.swift in Sources */,
 				0498E3D72345EC1000D4D135 /* CoffeeShopInfo.swift in Sources */,
+				042BE68023470DE40083EF5B /* UIView+Extension.swift in Sources */,
+				0498E3EC23463EA600D4D135 /* CoffeeShopCallOutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
