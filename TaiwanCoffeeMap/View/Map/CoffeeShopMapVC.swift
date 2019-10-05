@@ -9,14 +9,14 @@
 import UIKit
 import GoogleMaps
 
-class MainCoffeeMapVC: UIViewController {
+class CoffeeShopMapVC: UIViewController {
     
     @IBOutlet weak var mapView: GMSMapView!
     
     private let locationManager = CLLocationManager()
-    private let networkService = NetWorkService()
     
-    private var viewModel: CoffeeShopViewModel!
+    var viewModel: CoffeeShopViewModel?
+    
     private var coffeeShopCallOutView: CoffeeShopCallOutView!
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class MainCoffeeMapVC: UIViewController {
 
         setupNavigation()
         setupLocation()
-        loadCoffeeShopData()
+        showMapMarker()
     }
     
     private func setupNavigation() {
@@ -39,26 +39,16 @@ class MainCoffeeMapVC: UIViewController {
     }
     
     private func showMapMarker() {
+        guard let viewModel = viewModel else { return }
+        
         viewModel.coffeeShops.forEach {
             let marker = CoffeeShopMarker(vm: $0)
             marker.map = mapView
         }
     }
-    
-    private func loadCoffeeShopData() {
-        guard let url = URL(string: API.baseURL) else { return }
-        
-        let resorce = Resource<[CoffeeShopInfo]>(url: url)
-        networkService.load(resource: resorce) { [weak self] (coffeeShops) in
-            guard let coffeShops = coffeeShops else { return }
-            
-            self?.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
-            self?.showMapMarker()
-        }
-    }
 }
 
-extension MainCoffeeMapVC: CLLocationManagerDelegate {
+extension CoffeeShopMapVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status == .authorizedWhenInUse else { return }
         
@@ -75,7 +65,7 @@ extension MainCoffeeMapVC: CLLocationManagerDelegate {
     }
 }
 
-extension MainCoffeeMapVC: GMSMapViewDelegate {
+extension CoffeeShopMapVC: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         guard let coffeeShopMarker = marker as? CoffeeShopMarker else {
             return false

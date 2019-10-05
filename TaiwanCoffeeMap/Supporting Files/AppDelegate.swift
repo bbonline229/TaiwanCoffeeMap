@@ -24,9 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func initSetup() {
         UINavigationBar.appearance().barTintColor = .brown
+        UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
-        let mainCoffeeMapVC = MainCoffeeMapVC()
+        let mainCoffeeMapVC = MainContainerVC()
         let mainNav = UINavigationController(rootViewController: mainCoffeeMapVC)
         
         window = UIWindow(frame: UIScreen.main.bounds)

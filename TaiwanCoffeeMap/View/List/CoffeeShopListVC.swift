@@ -17,27 +17,11 @@ class CoffeeShopListVC: UIViewController {
         }
     }
     
-    private var viewModel: CoffeeShopViewModel?
-    
-    private let networkService = NetWorkService()
+    var viewModel: CoffeeShopViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadCoffeeShopData()
-    }
-    
-    private func loadCoffeeShopData() {
-        guard let url = URL(string: API.baseURL) else { return }
-        
-        let resorce = Resource<[CoffeeShopInfo]>(url: url)
-        
-        networkService.load(resource: resorce) { [weak self] (coffeeShops) in
-            guard let coffeShops = coffeeShops else { return }
-            
-            self?.viewModel = CoffeeShopViewModel(coffeeShops: coffeShops)
-            self?.tableView.reloadData()
-        }
     }
 }
 

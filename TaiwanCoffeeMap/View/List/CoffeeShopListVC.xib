@@ -22,11 +22,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-wC-3j1">
-                    <rect key="frame" x="0.0" y="0.0" width="416" height="56"/>
+                    <rect key="frame" x="0.0" y="44" width="416" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Naq-MB-ACa">
-                    <rect key="frame" x="0.0" y="56" width="416" height="714"/>
+                    <rect key="frame" x="0.0" y="100" width="416" height="670"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -34,7 +34,7 @@
             <constraints>
                 <constraint firstItem="fiD-wC-3j1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9AY-TQ-Ata"/>
                 <constraint firstItem="Naq-MB-ACa" firstAttribute="top" secondItem="fiD-wC-3j1" secondAttribute="bottom" id="Bw5-DK-RDP"/>
-                <constraint firstItem="fiD-wC-3j1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F2a-mX-Gbm"/>
+                <constraint firstItem="fiD-wC-3j1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="F2a-mX-Gbm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Naq-MB-ACa" secondAttribute="bottom" id="HLX-Rj-tUd"/>
                 <constraint firstItem="Naq-MB-ACa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZVk-PH-ovv"/>
                 <constraint firstItem="fiD-wC-3j1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gIx-y5-Z3o"/>
