@@ -19,6 +19,7 @@ class CoffeeShopMarker: GMSMarker {
         super.init()
         
         position = CLLocationCoordinate2D(latitude: vm.latitude, longitude: vm.longitude)
+        title = vm.name
         icon = UIImage(named: "coffeeMarker")
         appearAnimation = .pop
     }
