@@ -10,6 +10,13 @@ import UIKit
 
 class CoffeeShopListVC: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.showsCancelButton = true
+            searchBar.delegate = self
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
@@ -44,5 +51,29 @@ extension CoffeeShopListVC: UITableViewDataSource {
         cell.viewModel = viewModel.viewModel(for: indexPath.row)
         
         return cell
+    }
+}
+
+extension CoffeeShopListVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let viewModel = viewModel else { return }
+        
+        viewModel.filterCoffeeShop(with: searchText)
+        
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        guard let viewModel = viewModel else { return }
+        
+        viewModel.cancelSearch()
+        searchBarReset()
+        
+        tableView.reloadData()
+    }
+    
+    private func searchBarReset() {
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
     }
 }
