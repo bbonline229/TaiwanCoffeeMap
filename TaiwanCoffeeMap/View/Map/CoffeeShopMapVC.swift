@@ -62,6 +62,8 @@ extension CoffeeShopMapVC: CLLocationManagerDelegate {
         guard let location = locations.first else { return }
         
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+        
+        locationManager.stopUpdatingLocation()
     }
 }
 
