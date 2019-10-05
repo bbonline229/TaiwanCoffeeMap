@@ -72,8 +72,7 @@ extension CoffeeShopMapVC: GMSMapViewDelegate {
         }
         
         if let _ = coffeeShopCallOutView {
-            coffeeShopCallOutView.removeFromSuperview()
-            coffeeShopCallOutView = nil
+            removeCallOutView()
         }
         
         coffeeShopCallOutView = CoffeeShopCallOutView(frame: .zero)
@@ -84,9 +83,18 @@ extension CoffeeShopMapVC: GMSMapViewDelegate {
         return false
     }
     
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        removeCallOutView()
+    }
+    
     private func layout(callOutView: UIView) {
         view.addSubview(callOutView)
         
         callOutView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+    }
+    
+    private func removeCallOutView() {
+        coffeeShopCallOutView.removeFromSuperview()
+        coffeeShopCallOutView = nil
     }
 }
