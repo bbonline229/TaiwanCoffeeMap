@@ -12,7 +12,6 @@ class CoffeeShopListVC: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar! {
         didSet {
-            searchBar.showsCancelButton = true
             searchBar.delegate = self
         }
     }
@@ -20,6 +19,7 @@ class CoffeeShopListVC: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
+            tableView.delegate = self
             tableView.register(UINib(nibName: "CoffeeShopListCell", bundle: nil), forCellReuseIdentifier: "cell")
         }
     }
@@ -51,6 +51,12 @@ extension CoffeeShopListVC: UITableViewDataSource {
         cell.viewModel = viewModel.viewModel(for: indexPath.row)
         
         return cell
+    }
+}
+
+extension CoffeeShopListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchBarReset()
     }
 }
 
