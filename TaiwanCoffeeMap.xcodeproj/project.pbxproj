@@ -12,6 +12,7 @@
 		042BE68B234763E90083EF5B /* CoffeeShopListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042BE689234763E90083EF5B /* CoffeeShopListVC.xib */; };
 		042BE68F234770F20083EF5B /* MainContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE68D234770F20083EF5B /* MainContainerVC.swift */; };
 		042BE690234770F20083EF5B /* MainContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042BE68E234770F20083EF5B /* MainContainerVC.xib */; };
+		042BE69623489BA70083EF5B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE69523489BA70083EF5B /* UIColor+Extension.swift */; };
 		0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3A82345BAE200D4D135 /* AppDelegate.swift */; };
 		0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3AF2345BAE300D4D135 /* Assets.xcassets */; };
 		0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */; };
@@ -46,6 +47,7 @@
 		042BE689234763E90083EF5B /* CoffeeShopListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopListVC.xib; sourceTree = "<group>"; };
 		042BE68D234770F20083EF5B /* MainContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerVC.swift; sourceTree = "<group>"; };
 		042BE68E234770F20083EF5B /* MainContainerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainContainerVC.xib; sourceTree = "<group>"; };
+		042BE69523489BA70083EF5B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0498E3A52345BAE200D4D135 /* TaiwanCoffeeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanCoffeeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498E3A82345BAE200D4D135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0498E3AF2345BAE300D4D135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		0498E3BF2345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0498E3C82345C0D200D4D135 /* CoffeeShopMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopMapVC.swift; sourceTree = "<group>"; };
 		0498E3C92345C0D200D4D135 /* CoffeeShopMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopMapVC.xib; sourceTree = "<group>"; };
-		0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeShopInfo.swift; path = TaiwanCoffeeMap/Manager/CoffeeShopInfo.swift; sourceTree = SOURCE_ROOT; };
+		0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeShopInfo.swift; path = TaiwanCoffeeMap/Model/CoffeeShopInfo.swift; sourceTree = SOURCE_ROOT; };
 		0498E3DA2346048300D4D135 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		0498E3DF234608C200D4D135 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0498E3E123461D5400D4D135 /* CoffeeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewModel.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				042BE67F23470DE40083EF5B /* UIView+Extension.swift */,
+				042BE69523489BA70083EF5B /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -130,6 +133,14 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		042BE6972348FA8E0083EF5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0498E39C2345BAE200D4D135 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +166,7 @@
 			children = (
 				042BE67E23470DC00083EF5B /* Extensions */,
 				0498E3DC234605F900D4D135 /* Service */,
-				0498E3CC2345D50A00D4D135 /* Model */,
+				042BE6972348FA8E0083EF5B /* Model */,
 				0498E3CE2345D52800D4D135 /* View */,
 				0498E3CD2345D51E00D4D135 /* View Model */,
 				0498E3CF2345D54E00D4D135 /* Supporting Files */,
@@ -170,14 +181,6 @@
 				0498E3BF2345BAE300D4D135 /* Info.plist */,
 			);
 			path = TaiwanCoffeeMapTests;
-			sourceTree = "<group>";
-		};
-		0498E3CC2345D50A00D4D135 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0498E3CD2345D51E00D4D135 /* View Model */ = {
@@ -420,6 +423,7 @@
 				0498E3E0234608C200D4D135 /* API.swift in Sources */,
 				0498E3D72345EC1000D4D135 /* CoffeeShopInfo.swift in Sources */,
 				042BE68023470DE40083EF5B /* UIView+Extension.swift in Sources */,
+				042BE69623489BA70083EF5B /* UIColor+Extension.swift in Sources */,
 				042BE68A234763E90083EF5B /* CoffeeShopListVC.swift in Sources */,
 				0498E3EC23463EA600D4D135 /* CoffeeShopCallOutView.swift in Sources */,
 			);

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jack. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CoffeeShopInfoViewModel {
     let coffeeShopInfo: CoffeeShopInfo
@@ -25,8 +25,24 @@ extension CoffeeShopInfoViewModel {
         return coffeeShopInfo.address
     }
     
-    var mrtStation: String {
-        return coffeeShopInfo.mrtStation.isEmpty ? "暫無資訊" : coffeeShopInfo.mrtStation
+    var website: String {
+        return coffeeShopInfo.website
+    }
+    
+    var websiteAttributedString: NSAttributedString {
+        var myAttribute: [NSAttributedString.Key: Any]
+        
+        if coffeeShopInfo.website.isEmpty {
+            myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.black]
+        } else {
+            myAttribute = [
+                NSAttributedString.Key.foregroundColor: UIColor.cerulean,
+                NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue
+            ]
+        }
+        let websiteText = coffeeShopInfo.website.isEmpty ? "暫無資訊" : "官方網站"
+        
+        return NSAttributedString(string: websiteText, attributes: myAttribute)
     }
     
     var openTime: String {
@@ -39,5 +55,52 @@ extension CoffeeShopInfoViewModel {
     
     var longitude: Double {
         return Double(coffeeShopInfo.longitude)!
+    }
+    
+    var wifi: String {
+        return starImageName(with: coffeeShopInfo.wifi)
+    }
+    
+    var cheap: String {
+        return starImageName(with: coffeeShopInfo.cheap)
+    }
+    
+    var seat: String {
+        return starImageName(with: coffeeShopInfo.seat)
+    }
+    
+    var quiet: String {
+        return starImageName(with: coffeeShopInfo.quiet)
+    }
+    
+    var music: String {
+        return starImageName(with: coffeeShopInfo.music)
+    }
+    
+    var tasty: String {
+        return starImageName(with: coffeeShopInfo.tasty)
+    }
+    
+    private func starImageName(with score: Double) -> String {
+        switch score {
+        case 1..<1.5:
+            return "stars_1"
+        case 1.5..<2:
+            return "stars_1_5"
+        case 2..<2.5:
+            return "stars_2"
+        case 2.5..<3:
+            return "stars_2_5"
+        case 3..<3.5:
+            return "stars_3"
+        case 3.5..<4:
+            return "stars_3_5"
+        case 4..<4.5:
+            return "stars_4"
+        case 4.5...5:
+            return "stars_4_5"
+        default:
+            return "stars_5"
+        }
     }
 }

@@ -17,12 +17,12 @@ struct CoffeeShopInfo: Decodable {
     let tasty: Double
     let cheap: Double
     let music: Double
-    let url: String
     let address: String
     let latitude: String
     let longitude: String
     let mrtStation: String
     let openTime: String
+    let website: String
     
     private enum CodingKeys: String, CodingKey {
         case name
@@ -33,11 +33,11 @@ struct CoffeeShopInfo: Decodable {
         case tasty
         case cheap
         case music
-        case url
         case address
         case latitude
         case longitude
         case mrtStation = "mrt"
         case openTime = "open_time"
+        case website = "url"
     }
 }
