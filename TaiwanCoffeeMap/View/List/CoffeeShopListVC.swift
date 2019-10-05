@@ -13,7 +13,7 @@ class CoffeeShopListVC: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
-            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+            tableView.register(UINib(nibName: "CoffeeShopListCell", bundle: nil), forCellReuseIdentifier: "cell")
         }
     }
     
@@ -39,9 +39,9 @@ extension CoffeeShopListVC: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CoffeeShopListCell
         
-        cell.textLabel?.text = viewModel.viewModel(for: indexPath.row).name
+        cell.viewModel = viewModel.viewModel(for: indexPath.row)
         
         return cell
     }
