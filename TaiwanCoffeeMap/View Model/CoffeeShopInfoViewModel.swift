@@ -30,19 +30,21 @@ extension CoffeeShopInfoViewModel {
     }
     
     var websiteAttributedString: NSAttributedString {
-        var myAttribute: [NSAttributedString.Key: Any]
+        var attribute: [NSAttributedString.Key: Any]
         
         if coffeeShopInfo.website.isEmpty {
-            myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.black]
+            attribute = [
+                NSAttributedString.Key.foregroundColor: UIColor.black
+            ]
         } else {
-            myAttribute = [
+            attribute = [
                 NSAttributedString.Key.foregroundColor: UIColor.cerulean,
                 NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue
             ]
         }
         let websiteText = coffeeShopInfo.website.isEmpty ? "暫無資訊" : "官方網站"
         
-        return NSAttributedString(string: websiteText, attributes: myAttribute)
+        return NSAttributedString(string: websiteText, attributes: attribute)
     }
     
     var openTime: String {

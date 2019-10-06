@@ -16,7 +16,9 @@ class CoffeeShopViewModel {
     var isSearch = false
     
     init(coffeeShops: [CoffeeShopInfo]) {
-        self.coffeeShops = coffeeShops.map { CoffeeShopInfoViewModel(coffeeShopInfo: $0) }
+        self.coffeeShops = coffeeShops.map {
+            CoffeeShopInfoViewModel(coffeeShopInfo: $0)
+        }
     }
 }
 
@@ -38,7 +40,8 @@ extension CoffeeShopViewModel {
 
 extension CoffeeShopViewModel {
     func filterCoffeeShop(with searchText: String) {
-        searchCoffeeShops = coffeeShops.filter{ $0.name.prefix(searchText.count) == searchText
+        searchCoffeeShops = coffeeShops.filter{
+            $0.name.prefix(searchText.count) == searchText
         }
         isSearch = true
     }

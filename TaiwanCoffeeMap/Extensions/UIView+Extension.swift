@@ -101,13 +101,13 @@ extension UIView {
             let views = Bundle(for: mTpye).loadNibNamed(nibName, owner: self, options: nil),
             let view = views.first as? UIView else { return nil}
         
-        view.frame = self.bounds
+        view.frame = bounds
         view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         return view
     }
     
     func customizeAwakeFromCoder(){
-        guard let view = self.loadNib() else { return }
-        self.addSubview(view)
+        guard let view = loadNib() else { return }
+        addSubview(view)
     }
 }

@@ -28,7 +28,6 @@ class CoffeeShopListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
 

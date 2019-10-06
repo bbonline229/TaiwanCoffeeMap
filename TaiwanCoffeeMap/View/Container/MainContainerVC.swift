@@ -80,6 +80,7 @@ class MainContainerVC: UIViewController {
     
     @objc private func switchStyle() {
         removeCurrentVC()
+        
         contentType = contentType.switchContent
         disPlayContentView(with: contentType)
         barButton.title = contentType.barButtonTitle

@@ -14,7 +14,7 @@ class CoffeeShopMarker: GMSMarker {
     let viewModel: CoffeeShopInfoViewModel?
     
     init(vm: CoffeeShopInfoViewModel) {
-        self.viewModel = vm
+        viewModel = vm
         
         super.init()
         
