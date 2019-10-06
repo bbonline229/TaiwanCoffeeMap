@@ -38,7 +38,8 @@ extension CoffeeShopViewModel {
 
 extension CoffeeShopViewModel {
     func filterCoffeeShop(with searchText: String) {
-        searchCoffeeShops = coffeeShops.filter({$0.name.prefix(searchText.count) == searchText})
+        searchCoffeeShops = coffeeShops.filter{ $0.name.prefix(searchText.count) == searchText
+        }
         isSearch = true
     }
     

@@ -48,7 +48,7 @@ class MainContainerVC: UIViewController {
     
     private let networkService = NetWorkService()
     
-    var contentType: ContentType = .map
+    private var contentType: ContentType = .map
     
     override func viewDidLoad() {
         super.viewDidLoad()
