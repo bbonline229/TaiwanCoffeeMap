@@ -41,3 +41,9 @@ struct CoffeeShopInfo: Decodable {
         case website = "url"
     }
 }
+
+extension CoffeeShopInfo: Equatable {
+    static func ==(lhs: CoffeeShopInfo, rhs: CoffeeShopInfo) -> Bool {
+        return lhs.name == rhs.name && lhs.city == rhs.city
+    }
+}

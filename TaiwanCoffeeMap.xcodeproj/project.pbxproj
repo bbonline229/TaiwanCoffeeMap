@@ -15,10 +15,12 @@
 		042BE69623489BA70083EF5B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE69523489BA70083EF5B /* UIColor+Extension.swift */; };
 		042BE69E2349096E0083EF5B /* CoffeeShopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE69C2349096E0083EF5B /* CoffeeShopListCell.swift */; };
 		042BE69F2349096E0083EF5B /* CoffeeShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042BE69D2349096E0083EF5B /* CoffeeShopListCell.xib */; };
+		0430131C23505AB200C64A92 /* coffeeShop.json in Resources */ = {isa = PBXBuildFile; fileRef = 0430131B23505AB200C64A92 /* coffeeShop.json */; };
+		0430131F23505AFC00C64A92 /* XCTestCastExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430131E23505AFC00C64A92 /* XCTestCastExtension.swift */; };
+		0430132523505D5B00C64A92 /* CoffeeShopViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430132423505D5B00C64A92 /* CoffeeShopViewModelTest.swift */; };
 		0498E3A92345BAE200D4D135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3A82345BAE200D4D135 /* AppDelegate.swift */; };
 		0498E3B02345BAE300D4D135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3AF2345BAE300D4D135 /* Assets.xcassets */; };
 		0498E3B32345BAE300D4D135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3B12345BAE300D4D135 /* LaunchScreen.storyboard */; };
-		0498E3BE2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */; };
 		0498E3CA2345C0D200D4D135 /* CoffeeShopMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3C82345C0D200D4D135 /* CoffeeShopMapVC.swift */; };
 		0498E3CB2345C0D200D4D135 /* CoffeeShopMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498E3C92345C0D200D4D135 /* CoffeeShopMapVC.xib */; };
 		0498E3D72345EC1000D4D135 /* CoffeeShopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498E3D62345EC1000D4D135 /* CoffeeShopInfo.swift */; };
@@ -52,13 +54,15 @@
 		042BE69523489BA70083EF5B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		042BE69C2349096E0083EF5B /* CoffeeShopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListCell.swift; sourceTree = "<group>"; };
 		042BE69D2349096E0083EF5B /* CoffeeShopListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopListCell.xib; sourceTree = "<group>"; };
+		0430131B23505AB200C64A92 /* coffeeShop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coffeeShop.json; sourceTree = "<group>"; };
+		0430131E23505AFC00C64A92 /* XCTestCastExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCastExtension.swift; sourceTree = "<group>"; };
+		0430132423505D5B00C64A92 /* CoffeeShopViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewModelTest.swift; sourceTree = "<group>"; };
 		0498E3A52345BAE200D4D135 /* TaiwanCoffeeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiwanCoffeeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0498E3A82345BAE200D4D135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0498E3AF2345BAE300D4D135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0498E3B22345BAE300D4D135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0498E3B42345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0498E3B92345BAE300D4D135 /* TaiwanCoffeeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaiwanCoffeeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiwanCoffeeMapTests.swift; sourceTree = "<group>"; };
 		0498E3BF2345BAE300D4D135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0498E3C82345C0D200D4D135 /* CoffeeShopMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopMapVC.swift; sourceTree = "<group>"; };
 		0498E3C92345C0D200D4D135 /* CoffeeShopMapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopMapVC.xib; sourceTree = "<group>"; };
@@ -147,6 +151,38 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0430131D23505AE500C64A92 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0430131E23505AFC00C64A92 /* XCTestCastExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0430132023505B5200C64A92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0498E3BF2345BAE300D4D135 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0430132123505D1100C64A92 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				0430132423505D5B00C64A92 /* CoffeeShopViewModelTest.swift */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		0488B77B2350586900B347D7 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0430131B23505AB200C64A92 /* coffeeShop.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		0498E39C2345BAE200D4D135 = {
 			isa = PBXGroup;
 			children = (
@@ -183,8 +219,10 @@
 		0498E3BC2345BAE300D4D135 /* TaiwanCoffeeMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				0498E3BD2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift */,
-				0498E3BF2345BAE300D4D135 /* Info.plist */,
+				0430131D23505AE500C64A92 /* Extension */,
+				0488B77B2350586900B347D7 /* Stubs */,
+				0430132123505D1100C64A92 /* TestCase */,
+				0430132023505B5200C64A92 /* Supporting Files */,
 			);
 			path = TaiwanCoffeeMapTests;
 			sourceTree = "<group>";
@@ -304,6 +342,7 @@
 					};
 					0498E3B82345BAE300D4D135 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = 0498E3A42345BAE200D4D135;
 					};
 				};
@@ -346,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0430131C23505AB200C64A92 /* coffeeShop.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +481,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0498E3BE2345BAE300D4D135 /* TaiwanCoffeeMapTests.swift in Sources */,
+				0430132523505D5B00C64A92 /* CoffeeShopViewModelTest.swift in Sources */,
+				0430131F23505AFC00C64A92 /* XCTestCastExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,9 +668,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QV6XYH2RV;
-				INFOPLIST_FILE = TaiwanCoffeeMapTests/Info.plist;
+				INFOPLIST_FILE = "TaiwanCoffeeMapTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.bbonline229.TaiwanCoffeeMapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaiwanCoffeeMap.app/TaiwanCoffeeMap";
@@ -649,9 +692,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9QV6XYH2RV;
-				INFOPLIST_FILE = TaiwanCoffeeMapTests/Info.plist;
+				INFOPLIST_FILE = "TaiwanCoffeeMapTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
